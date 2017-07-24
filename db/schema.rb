@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170723143932) do
+ActiveRecord::Schema.define(version: 20170724032206) do
 
   create_table "cities", force: :cascade do |t|
     t.string   "juhe_id"
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(version: 20170723143932) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.index ["juhe_id"], name: "index_cities_on_juhe_id"
+  end
+
+  create_table "topnews", force: :cascade do |t|
+    t.string   "uniquekey"
+    t.string   "title"
+    t.date     "date"
+    t.string   "category"
+    t.string   "author_name"
+    t.string   "url"
+    t.string   "thumbnail_pic_s"
+    t.string   "thumbnail_pic_s02"
+    t.string   "thumbnail_pic_s03"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end

@@ -1,0 +1,15 @@
+<table class="table">
+<tr>
+  <th>Title</th>
+  <th>Category</th>
+  <th>Picture</th>
+</tr>
+<% @topnews.each do |topnew| %>
+  <tr>
+    <td><%= link_to(topnew.title, topnew.url) %></td>
+    <td><%= topnew.category %></td>
+    <td><%= image_tag(topnew.thumbnail_pic_s) %></td>
+    <td></td>
+  </tr>
+<% end %>
+</table>

@@ -14,3 +14,4 @@ module ApiExercise
   end
 end
 JUHE_CONFIG = Rails.application.config_for(:juhe)
+JUHE_TOPNEWS_CONFIG = Rails.application.config_for(:juhe_topnews)

@@ -1,0 +1,2 @@
+class Topnews < ApplicationRecord
+end
