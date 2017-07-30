@@ -21,3 +21,4 @@
 .byebug_history
 config/juhe.yml
 config/juhe_topnews.yml
+public/uploads
