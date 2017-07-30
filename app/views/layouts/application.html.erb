@@ -14,6 +14,7 @@
       <%= link_to('修改密码', edit_registration_path(:user)) %>
     <% else %>
       <%= link_to('注册', new_registration_path(:user)) %>
+      <%= link_to('登入', new_user_session_path) %>
     <% end %>
     <%= yield %>
   </body>
